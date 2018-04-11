@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gNK-hx-pZR" customClass="DropDownHeaderView" customModule="GifImageAndImageChange" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1V7-Vn-r9l">
+                    <rect key="frame" x="0.0" y="0.0" width="417" height="260"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test1" highlightedImage="test1" translatesAutoresizingMaskIntoConstraints="NO" id="qeK-gu-Z3k">
+                            <rect key="frame" x="0.0" y="0.0" width="417" height="260"/>
+                            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qeK-gu-Z3k" secondAttribute="trailing" id="58Y-jO-a3n"/>
+                        <constraint firstAttribute="bottom" secondItem="qeK-gu-Z3k" secondAttribute="bottom" id="GLJ-Dp-3ma"/>
+                        <constraint firstItem="qeK-gu-Z3k" firstAttribute="top" secondItem="1V7-Vn-r9l" secondAttribute="top" id="ehS-Yh-yLg"/>
+                        <constraint firstItem="qeK-gu-Z3k" firstAttribute="leading" secondItem="1V7-Vn-r9l" secondAttribute="leading" id="x5v-mp-GiC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1V7-Vn-r9l" firstAttribute="leading" secondItem="gNK-hx-pZR" secondAttribute="leading" id="6RN-fx-9eX"/>
+                <constraint firstItem="1V7-Vn-r9l" firstAttribute="top" secondItem="gNK-hx-pZR" secondAttribute="top" id="MUP-CQ-iMi"/>
+                <constraint firstAttribute="bottom" secondItem="1V7-Vn-r9l" secondAttribute="bottom" id="e2a-Zt-E9T"/>
+                <constraint firstAttribute="trailing" secondItem="1V7-Vn-r9l" secondAttribute="trailing" id="r4X-IO-DgT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backGroundImgView" destination="qeK-gu-Z3k" id="lNg-z6-4Qe"/>
+            </connections>
+            <point key="canvasLocation" x="-14" y="-34"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="test1" width="1200" height="750"/>
+    </resources>
+</document>

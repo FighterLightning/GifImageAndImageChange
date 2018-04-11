@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GifImageAndImageChange" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rl3-G0-gUc">
+                                <rect key="frame" x="40" y="313.5" width="295" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.1818847656" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EGc-mr-rI2"/>
+                                </constraints>
+                                <state key="normal" title="拆开一个盒子的动画效果">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="openBoxBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dJb-za-lak"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6N5-K7-68D">
+                                <rect key="frame" x="40" y="233.5" width="295" height="40"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.59607843140000005" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hRn-1E-mZ1"/>
+                                </constraints>
+                                <state key="normal" title="GIF的单次播放">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="gifBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EUA-b7-xlg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPr-NR-vLZ">
+                                <rect key="frame" x="40" y="393.5" width="295" height="40"/>
+                                <color key="backgroundColor" red="0.47450980392156861" green="0.95906575520833337" blue="0.32904730902777779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sah-ff-mzC"/>
+                                </constraints>
+                                <state key="normal" title="tableView下拉header图片放大效果">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dropDownBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S20-k9-WYE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aPr-NR-vLZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="BoP-Oy-cbo"/>
+                            <constraint firstItem="aPr-NR-vLZ" firstAttribute="top" secondItem="rl3-G0-gUc" secondAttribute="bottom" constant="40" id="R9W-ma-2HY"/>
+                            <constraint firstItem="rl3-G0-gUc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vmd-eJ-R5V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rl3-G0-gUc" secondAttribute="trailing" constant="40" id="eZK-qx-Jf1"/>
+                            <constraint firstItem="rl3-G0-gUc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hHk-wA-5I6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6N5-K7-68D" secondAttribute="trailing" constant="40" id="kdZ-wo-fxn"/>
+                            <constraint firstItem="rl3-G0-gUc" firstAttribute="top" secondItem="6N5-K7-68D" secondAttribute="bottom" constant="40" id="ok6-wr-veu"/>
+                            <constraint firstItem="6N5-K7-68D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="tDa-sP-Tlc"/>
+                            <constraint firstItem="rl3-G0-gUc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="tY3-fv-Tk2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aPr-NR-vLZ" secondAttribute="trailing" constant="40" id="xWw-PV-NkR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
