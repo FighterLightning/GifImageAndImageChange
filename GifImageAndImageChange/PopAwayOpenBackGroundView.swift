@@ -4,7 +4,10 @@
 //
 //  Created by 张海峰 on 2018/4/10.
 //  Copyright © 2018年 张海峰. All rights reserved.
-//
+////1.Gif单循环播放，播放结束后停在最后一帧动画图，同时监听结束事件。
+// 2.Gif播放一半，弹出自定义动画，循环播放Gif任意区间帧动画。
+// 3.tableView的headerView的伸缩变化。
+// demo地址：https://github.com/FighterLightning/GifImageAndImageChange.git
 
 import UIKit
 import ImageIO
